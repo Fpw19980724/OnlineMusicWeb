@@ -1,1 +1,96 @@
+package com.model;
+import org.apache.struts.action.ActionForm;
+import java.util.*;
+
+public class SongForm extends ActionForm {
+	public int id = 0;				
+	public String songName = "";		
+	public String singer = ""; 				
+	public String albumName = "";		
+	public String fileSize = ""; 			
+	public String fileURL = ""; 				
+	public int hits = 0;					
+	public int download = 0;				
+	public Date upTime=null;			
+	public String playId[]=new String[0];					
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getSongName() {
+		return songName;
+	}
+
+	public void setSongName(String songName) {
+		this.songName = songName;
+	}
+
+	public String getSinger() {
+		return singer;
+	}
+
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+
+	public String getAlbumName() {
+		return AlbumName;
+	}
+
+	public void setAlbumName(String AlbumName) {
+		this.albumName = albumName;
+	}
+
+	public String getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(String fileSize) {
+		this.fileSize = fileSize;
+	}
+
+	public String getFileURL() {
+		return fileURL;
+	}
+
+	public void setFileURL(String fileURL) {
+		this.fileURL = fileURL;
+	}
+
+	public int getHits() {
+		return hits;
+	}
+
+	public void setHits(int hits) {
+		this.hits = hits;
+	}
+
+	public int getDownload() {
+		return download;
+	}
+
+	public void setDownload(int download) {
+		this.download = download;
+	}
+	
+	public Date getUpTime(){
+		return upTime;
+	}
+	
+	public void setUpTime(Date upTime){
+		this.upTime=upTime;
+	}
+	
+	public String[] getPlayId(){
+		return playId;
+	}
+	public void setPlayId(String[] playId){
+		this.playId=playId;
+	}
+}
 
